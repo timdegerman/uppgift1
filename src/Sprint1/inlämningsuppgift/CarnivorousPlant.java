@@ -12,14 +12,14 @@ public class CarnivorousPlant extends Greenest{
      * Polymorfism (Method overriding). Gör om metoderna för att passa klassen "CarnivorousPlant"
      */
     @Override
-    public double waterPlant() {
+    public double calculateFluidAmount() {
         double standardFluid = 0.1;
         return standardFluid + (0.2 * getLengthOfPlant());
     }
 
     @Override
     public void printAmountOfFluid() {
-        double amountOfWater = waterPlant();
+        double amountOfWater = calculateFluidAmount();
         JOptionPane.showMessageDialog(null, this.getName() + " behöver " + amountOfWater + "L " + EBestEnums.FLUIDTYPE_CARNIVOROUS.getMessage());
     }
 }

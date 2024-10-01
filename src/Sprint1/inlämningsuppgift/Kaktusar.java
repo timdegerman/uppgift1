@@ -12,13 +12,13 @@ public class Kaktusar extends Greenest{
      * Polymorfism. Gör om metoderna för att passa klassen Kaktusar
      */
     @Override
-    public double waterPlant() {
+    public double calculateFluidAmount() {
         return 0.02;
     }
 
     @Override
     public void printAmountOfFluid() {
-        double amountOfWater = waterPlant();
+        double amountOfWater = calculateFluidAmount();
         JOptionPane.showMessageDialog(null, this.getName() + " behöver " + amountOfWater + "L " + EBestEnums.FLUIDTYPE_CACTUS.getMessage());
     }
 }

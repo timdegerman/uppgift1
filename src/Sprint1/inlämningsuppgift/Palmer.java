@@ -13,13 +13,13 @@ public class Palmer extends Greenest{
      * Polymorfism (Method overriding). Gör om metoderna för att passa klassen "Palmer"
      */
     @Override
-    public double waterPlant() {
+    public double calculateFluidAmount() {
         return 0.5 * getLengthOfPlant();
     }
 
     @Override
     public void printAmountOfFluid() {
-        double amountOfWater = waterPlant();
+        double amountOfWater = calculateFluidAmount();
         JOptionPane.showMessageDialog(null, this.getName() + " behöver " + amountOfWater + "L " + EBestEnums.FLUIDTYPE_PALM.getMessage());
     }
 }

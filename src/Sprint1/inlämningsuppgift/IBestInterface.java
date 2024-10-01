@@ -1,6 +1,6 @@
 package Sprint1.inlämningsuppgift;
 
 public interface IBestInterface {
-    double waterPlant();
+    double calculateFluidAmount();
     void printAmountOfFluid();
 }
