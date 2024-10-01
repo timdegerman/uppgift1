@@ -10,7 +10,7 @@ public class Palmer extends Greenest{
     }
 
     /**
-     * Polymorfism (Method overriding). Overridear metoderna från superklassen "Greenest"
+     * Polymorfism (Method overriding). Gör om metoderna för att passa klassen "Palmer"
      */
     @Override
     public double waterPlant() {

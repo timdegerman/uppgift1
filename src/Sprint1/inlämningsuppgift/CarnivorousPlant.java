@@ -9,7 +9,7 @@ public class CarnivorousPlant extends Greenest{
     }
 
     /**
-     * Polymorfism (Method overriding). Overridear metoderna från superklassen "Greenest"
+     * Polymorfism (Method overriding). Gör om metoderna för att passa klassen "CarnivorousPlant"
      */
     @Override
     public double waterPlant() {
