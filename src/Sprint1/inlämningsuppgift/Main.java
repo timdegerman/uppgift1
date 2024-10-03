@@ -1,6 +1,7 @@
 package Sprint1.inlämningsuppgift;
 
 import javax.swing.JOptionPane;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         Greenest igge = new Kaktusar("Igge", 0.2);
         Greenest meatloaf = new CarnivorousPlant("Meatloaf", 0.7);
 
-        List<Greenest> plants = List.of(laura, olof, igge, meatloaf);
+        List<Greenest> plants = Arrays.asList(laura, olof, igge, meatloaf);
 
         while (appRunning) {
             String input = JOptionPane.showInputDialog(null, "Vilken planta ska få vätska?");
